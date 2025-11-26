@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Позывной: Дом</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: #F4F4F4;
+        color: #333;
+    }
+
+    /* Цвета из макета */
+    :root {
+        --blue-dark: #3E5A6F;
+        --beige-card: #EDE1CF;
+        --beige-light: #F5EFE4;
+        --button-green: #8EA58B;
+        --button-green-dark: #7E967A;
+    }
+
+    header {
+        background: var(--blue-dark);
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
+
+    header img {
+        width: 55px;
+        margin-bottom: 10px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.4;
+    }
+
+    .hero-buttons {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons button {
+        background: white;
+        border: 2px solid var(--blue-dark);
+        padding: 12px 25px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    section {
+        background: white;
+        width: 100%;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-top: 8px solid var(--blue-dark);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: var(--blue-dark);
+        font-size: 26px;
+    }
+
+    .content-row {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .text-card,
+    .service-card {
+        background: var(--beige-card);
+        padding: 25px;
+        border-radius: 10px;
+        width: 260px;
+        min-height: 140px;
+    }
+
+    .service-card ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    .cta-btn {
+        margin-top: 20px;
+        padding: 12px 25px;
+        background: var(--button-green);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+
+    .cta-btn:hover {
+        background: var(--button-green-dark);
+    }
+
+    .form-section {
+        background: var(--blue-dark);
+        padding: 50px 20px;
+        color: white;
+    }
+
+    .form-section h2 {
+        color: white;
+    }
+
+    .form-box {
+        background: var(--beige-card);
+        width: 300px;
+        margin: 0 auto;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    .form-box input,
+    .form-box select,
+    .form-box textarea {
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    footer {
+        background: #303030;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Blue_shield_icon.svg">
+    <h1>ПОЗЫВНОЙ: ДОМ</h1>
+    <p class="hero-subtitle">
+        Единая цифровая платформа для ветеранов боевых действий, их семей, а также неравнодушных людей, желающих им помочь
+    </p>
+
+    <div class="hero-buttons">
+        <button>Для бойцов</button>
+        <button>Для семей</button>
+        <button>Для жителей</button>
+    </div>
+</header>
+
+<section>
+    <h2>Для бойцов: Путь к новой жизни</h2>
+
+    <div class="content-row">
+        <div class="text-card">
+            Восстанавливайся ради своего будущего.
+        </div>
+
+        <div class="service-card">
+            <b>Ключевые услуги:</b>
+            <ul>
+                <li>Психологическая поддержка</li>
+                <li>Юридическая помощь</li>
+                <li>Помощь в трудоустройстве</li>
+            </ul>
+            <button class="cta-btn">Получить помощь</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Для семей: Надёжный тыл</h2>
+
+    <div class="content-row">
+        <div class="text-card">
+            Ваши близкие уже рядом, им нужна ваша поддержка!
+        </div>
+
+        <div class="service-card">
+            <b>Ключевые услуги:</b>
+            <ul>
+                <li>Консультации для супругов и родителей</li>
+                <li>Помощь детям</li>
+                <li>Адресная бытовая помощь</li>
+                <li>Юридическая поддержка</li>
+            </ul>
+            <button class="cta-btn">Запросить поддержку</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Для жителей: Станьте частью поддержки</h2>
+
+    <div class="content-row">
+        <div class="text-card">
+            Ваша помощь может стать решающей!
+        </div>
+
+        <div class="service-card">
+            <b>Как можно помочь:</b>
+            <ul>
+                <li>Стать волонтёром</li>
+                <li>Предложить работу</li>
+                <li>Стать экспертом-консультантом</li>
+                <li>Поддержать финансово</li>
+            </ul>
+            <button class="cta-btn">Присоединиться</button>
+        </div>
+    </div>
+</section>
+
+<div class="form-section">
+    <h2>Если готовы, то заполните анкету:</h2>
+
+    <div class="form-box">
+        <input type="text" placeholder="Имя">
+        <select>
+            <option>Ваш статус</option>
+            <option>Боец</option>
+            <option>Член семьи</option>
+            <option>Житель</option>
+        </select>
+        <textarea placeholder="Суть обращения"></textarea>
+        <input type="text" placeholder="Контакты">
+
+        <button class="cta-btn" style="width:100%;">Отправить анкету</button>
+    </div>
+</div>
+
+<footer>
+    ПОЗЫВНОЙ: ДОМ<br>
+    +7 (999) 555-28-38 • support@pozivnoy.dom.ru<br>
+    © 2024
+</footer>
+
+</body>
+</html>
